@@ -1,0 +1,165 @@
+* {
+    font-family: 'Abel', sans-serif;
+}
+body {
+    background: #000 url(../imagen/fondo01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.st0 {
+  fill:none;
+  stroke:#FFFFFF;
+  stroke-miterlimit:10;
+}
+svg {
+  width: 60%;
+  max-width: 50em;
+  box-sizing: border-box;
+  margin: 1em auto;
+  padding: 0.5em 1em;
+}
+#site_content {
+    background: rgba(0, 0, 0, 0) url(../imagen/fondo02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: aniFondo02;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+@keyframes aniFondo02 {
+    0% {
+        background-position:initial;
+        background-size: 100%;
+    }
+    25% {
+        background-position: right;
+        background-size: 95%;
+     }
+    50% {
+       background-position: center;
+       background-size: 95%;
+    }
+    75% {
+        background-position: left;
+        background-size: 95%;
+    }
+    100% {
+       background-position: initial;
+       background-size: 100%;
+    }
+   }
+ #logo {
+	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+	        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+}
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#SVGani:hover {
+    -webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) ;
+            animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) ;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+#content-index {
+    text-align: center;
+    float: center;
+    width: 800px;
+    padding:  1em 5.5em 1em 1em;
+}
+
+p {
+    color: antiquewhite;
+}
+#footer
+{ width: 898px;
+  height: 30px;
+  padding: 24px 0 5px 0;
+  text-align: center; 
+  background: transparent url(../imagen/transparent.png) repeat;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/*------------------actividades--------------------*/
+table tr th, table tr td
+{ background: #04243fb4;
+  color: #FFF;
+  padding: 7px 4px;
+  text-align: left;}
+  
+table tr td
+{ background: #f0efe2a4;
+  color: #000000;
+  border-top: none;
+}
+
+/*------------------contact--------------------*/
+.form_settings input, .form_settings textarea
+{ padding: 5px; 
+  width: 299px; 
+  font: 100% arial;
+  border-style: dotted; 
+  border: 1px solid #E5E5DB; 
+  background: #04243fb4; 
+  color: #FFF;}
+.form_settings .submit
+{ font: 100% arial; 
+  border-style: dotted; 
+  width: 99px; 
+  margin: 0 0 0 212px; 
+  height: 33px;
+  padding: 2px 0 3px 0;
+  cursor: pointer; 
+  background: #04243fb4; 
+  color: #FFF;}
+
+
